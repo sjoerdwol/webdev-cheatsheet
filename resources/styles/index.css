@@ -1,0 +1,57 @@
+*{
+    font-family: sans-serif;
+}
+
+header {
+    background-color: dimgrey;
+    height: 100px;
+    position: relative;
+    top: -10px;
+    left: -10px;
+    width: 101%;
+}
+
+header nav {
+    display: inline;
+    position: relative;
+    top: 26%;
+    right: 75px;
+}
+
+header nav ul {
+    display: inline;
+    float: right;
+}
+
+header nav ul li {
+    background-color: slategrey;
+    display: inline;
+    font-weight: bold;
+    margin: 0 5px;
+    padding: 2em;
+}
+
+body {
+    background-color: darkgray;
+}
+
+main .topic {
+    background-color: rgba(83, 151, 52, 0.53);
+}
+
+.nav_link {
+    color: lightgrey;    
+}
+
+.nav_link:active {
+    color: darkred;
+}
+
+#title {
+    color: lightgrey;
+    display: inline;
+    position: relative;
+    top: 26%;
+    left: 75px;
+    font-size: 40px;
+}
