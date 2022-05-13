@@ -1,14 +1,14 @@
 *{
-    font-family: sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 header {
-    background-color: dimgrey;
+    background-color: #ac5ec2a8;
     height: 100px;
     position: relative;
     top: -10px;
     left: -10px;
-    width: 101%;
+    width: 100.95%;
 }
 
 header nav {
@@ -24,34 +24,44 @@ header nav ul {
 }
 
 header nav ul li {
-    background-color: slategrey;
+    background-color: #ffe8ff63;
     display: inline;
     font-weight: bold;
-    margin: 0 5px;
+    margin: 0 3px;
     padding: 2em;
+    border-radius: 20%;
 }
 
 body {
-    background-color: darkgray;
+    background-color: #CCA5D5;
 }
 
 main .topic {
-    background-color: rgba(83, 151, 52, 0.53);
+    background-color: #ffe8ff63;
 }
 
 .nav_link {
-    color: lightgrey;    
+    color: white;    
 }
 
 .nav_link:active {
-    color: darkred;
+    color: darkblue;
+}
+
+.topic_title {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    font-family: 'Oleo Script Swash Caps', sans-serif;
+    color: black;
 }
 
 #title {
-    color: lightgrey;
+    color: white;
     display: inline;
     position: relative;
-    top: 26%;
+    top: 15%;
     left: 75px;
-    font-size: 40px;
+    font-size: 50px;
+    font-family: 'Oleo Script Swash Caps', sans-serif;
 }
