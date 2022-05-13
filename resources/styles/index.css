@@ -1,9 +1,9 @@
 *{
-    font-family: 'Arial', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 header {
-    background-color: #ac5ec2a8;
+    background-color: #003897;
     height: 100px;
     position: relative;
     top: -10px;
@@ -14,8 +14,8 @@ header {
 header nav {
     display: inline;
     position: relative;
-    top: 26%;
-    right: 75px;
+    top: 23%;
+    right: 50px;
 }
 
 header nav ul {
@@ -24,7 +24,7 @@ header nav ul {
 }
 
 header nav ul li {
-    background-color: #ffe8ff63;
+    background-color: #000064;
     display: inline;
     font-weight: bold;
     margin: 0 3px;
@@ -33,35 +33,56 @@ header nav ul li {
 }
 
 body {
-    background-color: #CCA5D5;
+    background-color: #0064B7;
 }
 
 main .topic {
-    background-color: #ffe8ff63;
+    background-color: #008dc563;
+    position: relative;
+    left: 50px;
+    width: 94%;
 }
 
 .nav_link {
-    color: white;    
+    color: #F9EAFF;    
 }
 
 .nav_link:active {
-    color: darkblue;
+    color: #00DFC1;
+}
+
+.section_title {
+    position: relative;
+    left: 20px;
+    bottom: 5px;
+    margin: 0;
+    color: #FDF6FF;
+}
+
+.topic p {
+    margin: 5px 0;
+    position: relative;
+    left: 30px;
+    padding-bottom: 10px;
+    color: #FDF6FF;
 }
 
 .topic_title {
     position: relative;
     top: 5px;
-    left: 5px;
+    left: 10px;
     font-family: 'Oleo Script Swash Caps', sans-serif;
-    color: black;
+    color: #FDF6FF;
+    margin: 20px 0 10px 0;
+    letter-spacing: 1px;
 }
 
 #title {
-    color: white;
+    color: #F9EAFF;
     display: inline;
     position: relative;
     top: 15%;
-    left: 75px;
+    left: 50px;
     font-size: 50px;
     font-family: 'Oleo Script Swash Caps', sans-serif;
 }
