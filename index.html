@@ -5,6 +5,7 @@
         <!--Imports-->
         <link rel="stylesheet" href="resources/styles/index.css">
         <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     </head>
     <body>
         <header>
@@ -22,23 +23,37 @@
         <main>
             <div class="topic" id="topic_html">
                 <h2 class="topic_title">HTML</h2>
-                <h3>Starting a new HTML file</h3>
+                <h3 class="section_title">Starting a new HTML file</h3>
+                <p> To start a new HTML file, you need to create an .html file in your working directory.
+                    It's recommended to name your starting page 'index.html'.<br />
+                    In said HTML file, you need to insert the following HTML tags in this order: &lt;!DOCTYPE html&gt;, &lt;html&gt; (opening and closing tag), 
+                    &lt;head&gt; (opening and closing tag) and &lt;body&gt; (opening and closing tag).<br /> 
+                    In the end, your final HTML "skeleton" should look like this:<br /><br />
+                    &lt;!DOCTYPE html&gt;<br />&lt;html&gt;<br />&lt;head&gt;<br />&lt;/head&gt;<br />&lt;body&gt;<br />&lt;/body&gt;<br />&lt;/html&gt;
+                </p>
             </div>
             <div class="topic" id="topic_css">
                 <h2 class="topic_title">CSS</h2>
-                <h3>Basic CSS knowledge</h3>
+                <h3 class="section_title">Basic CSS knowledge</h3>
+                <p> CSS works with selectors, which work with "priorities". <br />
+                    The first selector refers to HTML tags. For example to style a &lt;div&gt; you type 'div {}'' into the CSS file.<br />
+                    The second selectors selects classes in your HTML file. To style &lt;div class="test"&gt; you type '.test {}' into your CSS file.<br />
+                    The final selector selects your HTML objects by ID. If you'd like to style &lt;div id="testid"&gt; you need to add '#testid {}' into your CSS file.<br />
+                    The priority of the selectors is HTML Tag &lt; Class &lt; ID. A declaration in an ID selector overrides a declaration in a class selector. 
+                    Both override declarations of Tag selectors.
+                </p>
             </div>
             <div class="topic" id="topic_js">
                 <h2 class="topic_title">JavaScript</h2>
-                <h3>to be completed...</h3>
+                <h3 class="section_title">to be completed...</h3>
             </div>
             <div class="topic" id="topic_react">
                 <h2 class="topic_title">React</h2>
-                <h3>to be completed...</h3>
+                <h3 class="section_title">to be completed...</h3>
             </div>
             <div class="topic" id="topic_redux">
                 <h2 class="topic_title">Redux</h2>
-                <h3>to be completed...</h3>
+                <h3 class="section_title">to be completed...</h3>
             </div>
         </main>
     </body>
