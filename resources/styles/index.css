@@ -6,12 +6,12 @@ article {
     background-color: rgba(240, 235, 216, 0.5);
     border-radius: 10px;
     margin: 0 0 1.5rem 0;
-    padding: 0 2.5% 0 2.5%;
+    padding: 0 2.5% 2.5% 2.5%;
 }
 
 article p {
     margin: 0;
-    padding: 0 0 0.5rem 0;
+    padding: 0;
 }
 
 body {
@@ -51,6 +51,10 @@ section {
     font-size: 1.3rem;
     margin: 0 0 0.5rem 0;
     padding: 0.5rem 0 0 0;
+}
+
+.content {
+    padding: 0 10% 0 10%;
 }
 
 .topic_title {
