@@ -1,88 +1,88 @@
 *{
-    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
 }
 
-header {
-    background-color: #003897;
-    height: 100px;
-    position: relative;
-    top: -10px;
-    left: -10px;
-    width: 100.95%;
+article {
+    background-color: rgba(240, 235, 216, 0.5);
+    border-radius: 10px;
+    margin: 0 0 1.5rem 0;
+    padding: 0 2.5% 0 2.5%;
 }
 
-header nav {
-    display: inline;
-    position: relative;
-    top: 23%;
-    right: 50px;
-}
-
-header nav ul {
-    display: inline;
-    float: right;
-}
-
-header nav ul li {
-    background-color: #000064;
-    display: inline;
-    font-weight: bold;
-    margin: 0 3px;
-    padding: 2em;
-    border-radius: 20%;
+article p {
+    margin: 0;
+    padding: 0 0 0.5rem 0;
 }
 
 body {
-    background-color: #0064B7;
-}
-
-main .topic {
-    background-color: #008dc563;
-    position: relative;
-    left: 50px;
-    width: 94%;
-}
-
-.nav_link {
-    color: #F9EAFF;    
-}
-
-.nav_link:active {
-    color: #00DFC1;
-}
-
-.section_title {
-    position: relative;
-    left: 20px;
-    bottom: 5px;
     margin: 0;
-    color: #FDF6FF;
+    padding: 0;
 }
 
-.topic p {
-    margin: 5px 0;
+header {
+    align-items: center;
+    border-bottom: 1px solid #0D1321;
+    color: #0D1321;
+    display: flex;
+    font-family: 'Oswald', sans-serif;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0.5rem 0;
     position: relative;
-    left: 30px;
-    padding-bottom: 20px;
-    color: #FDF6FF;
+    top: 0px;
+}
+
+html {
+    color: #0D1321;
+    font-size: 16px;
+}
+
+main {
+    font-family: 'Arsenal', sans-serif;
+    margin: 0 auto 0 auto;
+    padding: 0 10% 0 10%;
+}
+
+section {
+    margin: 0;
+}
+
+.article_title {
+    margin: 0 0 1rem 0;
 }
 
 .topic_title {
-    position: relative;
-    top: 5px;
-    left: 10px;
-    font-family: 'Oleo Script Swash Caps', sans-serif;
-    color: #FDF6FF;
-    margin: 20px 0 10px 0;
-    letter-spacing: 1px;
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem 0;
+    padding: 0;
 }
 
 #title {
-    color: #F9EAFF;
+    display: inline-block;
+    font-size: 2rem;
+    margin: 0 0 0 10%;
+}
+
+#top_level {
+    float: right;
+    margin: 0 10% 0 0;
+}
+
+#top_level ul, #top_level li {
     display: inline;
-    position: relative;
-    top: 15%;
-    left: 50px;
-    font-size: 50px;
-    font-family: 'Oleo Script Swash Caps', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#top_level li a {
+    color: #1D2D44;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 1rem 1rem 1rem 1rem;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+#top_level li a:hover {
+    color: #748CAB;
 }
