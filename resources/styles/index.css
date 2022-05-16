@@ -47,6 +47,27 @@ section {
     margin: 0;
 }
 
+table {
+    border: 1px solid #1D2D44;
+    width: 80%;
+    margin: 0 auto;
+}
+
+table .empty {
+    background-color: #748CAB;
+    border-bottom: 0;
+}
+
+thead {
+    background-color: #748CAB;
+    color: white;
+}
+
+td {
+    border-bottom: 1px solid #1D2D44;
+    text-align: center;
+}
+
 .article_title {
     font-size: 1.3rem;
     margin: 0 0 0.5rem 0;
@@ -55,6 +76,15 @@ section {
 
 .content {
     padding: 0 10% 0 10%;
+}
+
+.last {
+    border-bottom: 0;
+}
+
+.middle {
+    border-left: 1px solid #1D2D44;
+    border-right: 1px solid #1D2D44;
 }
 
 .topic_title {
