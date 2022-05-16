@@ -43,6 +43,10 @@ main {
     padding: 0 10% 0 10%;
 }
 
+pre {
+    margin: 0;
+}
+
 section {
     margin: 0;
 }
