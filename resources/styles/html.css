@@ -1,19 +1,14 @@
+/* General Styling */
 *{
     box-sizing: border-box;
 }
 
-article {
-    background-color: rgba(240, 235, 216, 0.5);
-    border-radius: 10px;
-    margin: 0 0 1.5rem 0;
-    padding: 0 2.5% 1rem 2.5%;
+html {
+    color: #0D1321;
+    font-size: 16px;
 }
 
-article p {
-    margin: 0;
-    padding: 0;
-}
-
+/* Structural Styling */
 body {
     margin: 0;
     padding: 0;
@@ -32,26 +27,72 @@ header {
     top: 0px;
 }
 
-html {
-    color: #0D1321;
-    font-size: 16px;
-}
-
-img {
-    display: block;
-}
-
 main {
     font-family: 'Arsenal', sans-serif;
     margin: 0 auto 0 auto;
     padding: 0 10% 0 10%;
 }
 
-pre {
+/* Header Styling */
+.active {
+    text-decoration: underline;
+}
+
+#title {
+    display: inline-block;
+    font-size: 2rem;
+    margin: 0 0 0 10%;
+}
+
+#top_level {
+    float: right;
+    margin: 0 10% 0 0;
+}
+
+#top_level ul, #top_level li {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+#top_level li a {
+    color: #1D2D44;
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 1rem 1rem 1rem 1rem;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+#top_level li a:hover {
+    color: #748CAB;
+}
+
+/* Section Styling */
+section {
     margin: 0;
 }
 
-section {
+.topic_title {
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem 0;
+    padding: 0;
+}
+
+/* Article Styling */
+article {
+    background-color: rgba(240, 235, 216, 0.5);
+    border-radius: 10px;
+    margin: 0 0 1.5rem 0;
+    padding: 0 2.5% 1rem 2.5%;
+}
+
+article p {
+    margin: 0;
+    padding: 0;
+}
+
+pre {
     margin: 0;
 }
 
@@ -93,40 +134,4 @@ td {
 .middle {
     border-left: 1px solid #1D2D44;
     border-right: 1px solid #1D2D44;
-}
-
-.topic_title {
-    font-size: 1.8rem;
-    margin: 2rem 0 1rem 0;
-    padding: 0;
-}
-
-#title {
-    display: inline-block;
-    font-size: 2rem;
-    margin: 0 0 0 10%;
-}
-
-#top_level {
-    float: right;
-    margin: 0 10% 0 0;
-}
-
-#top_level ul, #top_level li {
-    display: inline;
-    margin: 0;
-    padding: 0;
-}
-
-#top_level li a {
-    color: #1D2D44;
-    font-size: 1.1rem;
-    font-weight: 700;
-    padding: 1rem 1rem 1rem 1rem;
-    text-decoration: none;
-    vertical-align: middle;
-}
-
-#top_level li a:hover {
-    color: #748CAB;
 }
