@@ -26,7 +26,67 @@
             <section>
                 <h2 class="topic_title">JavaScript</h2>
                 <article>
-                    <h3 class="article_title">to be completed...</h3>
+                    <h3 class="article_title">Variables</h3>
+                    <div class="content">
+                        <p>
+                            We learned the following on variables:<br>
+                            Variables hold reusable data in a program and associate it with a name.<br>
+                            The <strong>var</strong> keyword is used in pre-ES6 versions of JS.<br>
+                            <strong>let</strong> is the preferred way to declare a variable when it can be reassigned, and <strong>const</strong> is the preferred way to declare a variable with a constant value.<br>
+                            Variables that have not been initialized store the primitive data type <strong>undefined</strong>.<br>
+                            Mathematical assignment operators make it easy to calculate a new value and assign it to the same variable.<br>
+                            The <strong>+</strong> operator is used to concatenate strings including string values held in variables.<br>
+                            In ES6, template literals use backticks <strong>`</strong> and <strong>${}</strong> to interpolate values into a string.<br>
+                            The <strong>typeof</strong> keyword returns the data type (as a string) of a value.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">Conditionals</h3>
+                    <div class="content">
+                        <p>
+                            An <strong>if</strong> checks a condition and will execute a task if that condition evaluates to <strong>true</strong>.<br>
+                            <strong>if...else</strong> statements make binary decisions and execute different code blocks based on a provided condition.<br>
+                            We can add more conditions using <strong>else if</strong> statements.<br>
+                            Comparison operators, including <strong><</strong>, <strong>></strong>, <strong><=</strong>, <strong>>=</strong>, <strong>===</strong> and <strong>!==</strong> can compare to values.<br>
+                            The logical "and" operator, <strong>&&</strong>, checks if both provided expressions are truthy.<br>
+                            The logical "or" operator, <strong>||</strong>, checks if either provided expression is truthy.<br>
+                            The bang operator, <strong>!</strong>, switches the truthiness and falsiness of a value.<br>
+                            The ternary operator, <strong>?</strong>, is shorthand to simplify concise <strong>if...else</strong> statements.<br>
+                            A <strong>switch</strong> statement can be used to simplify the process of writing multiple <strong>else if</strong> statements. <br>
+                            The <strong>break</strong> keyword stops the remaining <strong>cases</strong> from being checked and executed in a <strong>switch</strong> statement.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">Functions</h3>
+                    <div class="content">
+                        <p>
+                            A <strong>function</strong> is a reusable block of code that groups together a sequence of statements to perform a specific task.<br>
+                            A <strong>function</strong> declaration: function greetWorld(){} <br>
+                            A parameter is a named variable inside a function’s block which will be assigned the value of the argument passed in when the function is invoked.<br>
+                            To call a funtion in your code: greetWorld(); <br>
+                            ES6 introduces new ways of handling arbitrary parameters through default parameters which allow us to assign a default value to a parameter in case no argument is passed into the function.<br>
+                            To return a value from a function, we use a <strong>return</strong> statement.<br>
+                            To define a function using <strong>function expressions</strong>: const calculateArea = function(){};<br>
+                            To define a function using <strong>arrow function notation</strong>: const calculateArea = () => {};<br>
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">Scope</h3>
+                    <div class="content">
+                        <p>
+                           <strong>Scope</strong> refers to where variables can be accessed throughout the program, and is determined by where and how they are declared.<br>
+                           <strong>Blocks</strong> are statements that exist within curly braces <strong>{}</strong>.<br>
+                           <strong>Global scope</strong> refers to the context within which variables are accessible to every part of the program.<br>
+                           <strong>Global variables</strong> are variables that exist within global scope.<br>
+                           <strong>Block scope</strong> refers to the context within which variables are accessible only within the block they are defined.<br>
+                           <strong>Local variables</strong> are variables that exist within block scope.<br>
+                           <strong>Global namespace</strong> is the space in our code that contains globally scoped information.<br>
+                           <strong>Scope pollution</strong> is when too many variables exist in a namespace or variable names are reused.
+                        </p>
+                    </div>
                 </article>
             </section>
         </main>
