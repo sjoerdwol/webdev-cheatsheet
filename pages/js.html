@@ -88,6 +88,98 @@
                         </p>
                     </div>
                 </article>
+                <article>
+                    <h3 class="article_title">Arrays</h3>
+                    <div class="content">
+                        <p>
+                           <strong>Arrays</strong> are lists that store data in JavaScript.<br>
+                           <strong>Arrays</strong> are created with brackets <strong>[]</strong>.<br>
+                           Each item inside of an array is at a numbered position, or index, starting at <strong>0</strong>.<br>
+                           We can access one item in an array using its index, with syntax like <strong>myArray[0]</strong>.<br>
+                           We can also change an item in an array using its index, with syntax like <strong>myArray[0] = 'new string'</strong>.<br>
+                           Arrays have a <strong>length</strong> property, which allows you to see how many items are in an array.<br>
+                           Arrays have their own methods, including <strong>.push()</strong> and <strong>.pop()</strong>, which add and remove items from an array, respectively.<br>
+                           Arrays have many methods that perform different tasks, such as <strong>.slice()</strong> and <strong>.shift()</strong>.<br>
+                           Some built-in methods are mutating, meaning the method will change the array, while others are not mutating. You can always check the documentation.<br>
+                           Variables that contain arrays can be declared with <strong>let</strong> or <strong>const</strong>. Even when declared with <strong>const</strong>, arrays are still mutable. However, a variable declared with <strong>const</strong> cannot be reassigned.<br>
+                           Arrays mutated inside of a function will keep that change even outside the function.<br>
+                           Arrays can be nested inside other arrays.<br>
+                           To access elements in nested arrays chain indices using bracket notation.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">Loops</h3>
+                    <div class="content">
+                        <p>
+                           Loops perform repetitive actions so we don’t have to code that process manually every time.<br>
+                           A <strong>for</strong> loop loops for an specific amount of time.<br>
+                           A nested <strong>for</strong> loop is a loop inside another loop.<br>
+                           <strong>while</strong> loops allow for different types of stopping conditions.<br>
+                           Stopping conditions are crucial for avoiding infinite loops.<br>
+                           <strong>do...while</strong> a loops run code at least once— only checking the stopping condition after the first execution.<br>
+                           The <strong>break</strong> keyword allows programs to leave a loop during the execution of its block.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">Objects</h3>
+                    <div class="content">
+                        <p>
+                           Objects store collections of key-value pairs.<br>
+                           Each key-value pair is a property—when a property is a function it is known as a method.<br>
+                           An object literal is composed of comma-separated key-value pairs surrounded by curly braces.<br>
+                           You can access, add or edit a property within an object by using dot notation or bracket notation.<br>
+                           We can add methods to our object literals using key-value syntax with anonymous function expressions as values or by using the new ES6 method syntax.<br>
+                           We can navigate complex, nested objects by chaining operators.<br>
+                           Objects are mutable—we can change their properties even when they’re declared with <strong>const</strong>.<br>
+                           Objects are passed by reference— when we make changes to an object passed into a function, those changes are permanent.<br>
+                           We can iterate through objects using the <strong>for...in</strong> syntax.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">Advanced Objects</h3>
+                    <div class="content">
+                        <p>
+                           The object that a method belongs to is called the calling object.<br>
+                           The <strong>this</strong> keyword refers to the calling object and can be used to access properties of the calling object.<br>
+                           Methods do not automatically have access to other internal properties of the calling object.<br>
+                           The value of <strong>this</strong> depends on where the <strong>this</strong> is being accessed from.<br>
+                           We cannot use arrow functions as methods if we want to access other internal properties.<br>
+                           JavaScript objects do not have built-in privacy, rather there are conventions to follow to notify other developers about the intent of the code.<br>
+                           The usage of an underscore before a property name means that the original developer did not intend for that property to be directly changed.<br>
+                           Setters and getter methods allow for more detailed ways of accessing and assigning properties.<br>
+                           Factory functions allow us to create object instances quickly and repeatedly.<br>
+                           There are different ways to use object destructuring: one way is the property value shorthand and another is destructured assignment.<br>
+
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">Iterators</h3>
+                    <div class="content">
+                        <p>
+                           <strong>.forEach()</strong> is used to execute the same code on every element in an array but does not change the array and returns <strong>undefined</strong>.<br>
+                           <strong>.map()</strong> executes the same code on every element in an array and returns a new array with the updated elements.<br>
+                           <strong>.filter()</strong> checks every element in an array to see if it meets certain criteria and returns a new array with the elements that return truthy for the criteria.<br>
+                           <strong>.findIndex()</strong> returns the index of the first element of an array that satisfies a condition in the callback function. It returns <strong>-1</strong> if none of the elements in the array satisfies the condition.<br>
+                           <strong>.reduce()</strong> iterates through an array and takes the values of the elements and returns a single value.<br>
+                           All iterator methods take a callback function, which can be a pre-defined function, a function expression, or an arrow function.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">Errors and Debugging</h3>
+                    <div class="content">
+                        <p>
+                           <strong>First step:</strong> Review stack trace.<br>
+                           <strong>Second step:</strong> Using logging to discover silent bugs.<br>
+                           <strong>Third step:</strong> Research in documentation (e.g. MDN).<br>
+                           <strong>First step:</strong> StackOverflow!!!.<br>
+                        </p>
+                    </div>
+                </article>
             </section>
         </main>
     </body>
