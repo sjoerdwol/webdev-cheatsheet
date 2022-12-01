@@ -123,6 +123,44 @@
                         </table>
                     </div>
                 </article>
+                <article>
+                    <h3 class="article_title">HTML Forms</h3>
+                    <div class="content">
+                        <p> 
+                            The purpose of a <strong>form</strong> is to allow users to input information and send it.<br>
+                            The <strong>form</strong>’s <strong>action</strong> attribute determines where the form’s information goes.<br>
+                            The <strong>form</strong>’s <strong>method</strong> attribute determines how the information is sent and processed.<br>
+                            To add fields for users to input information we use the <strong>input</strong> element and set the <strong>type</strong> attribute to a field of our choosing.<br>
+                            Setting <strong>type</strong> to <strong>"text"</strong> creates a single row field for text input.<br>
+                            Setting <strong>type</strong> to <strong>"password"</strong> creates a single row field that censors text input.<br>
+                            Setting <strong>type</strong> to <strong>"number"</strong> creates a single row field for number input.<br>
+                            Setting <strong>type</strong> to <strong>"range"</strong> creates a slider to select from a range of numbers.<br>
+                            Setting <strong>type</strong> to <strong>"checkbox"</strong> creates a single checkbox that can be paired with other checkboxes.<br>
+                            Setting <strong>type</strong> to <strong>"radio"</strong> creates a radio button that can be paired with other radio buttons.<br>
+                            Setting <strong>type</strong> to <strong>"text"</strong> and adding the <strong>list</strong> attribute will pair the <strong>input</strong> with a <strong>datalist</strong> 
+                            element if the <strong>list</strong> of <strong>input</strong> and the <strong>id</strong> of <strong>datalist</strong> are the same.<br>
+                            Setting <strong>type</strong> to <strong>"submit"</strong> creates a submit button.<br>
+                            A <strong>select</strong> element is populated with <strong>option</strong> elements and renders a dropdown list selection.<br>
+                            A <strong>datalist</strong> element is populated with <strong>option</strong> elements and works with an <strong>input</strong> to search through choices.<br>
+                            When a <strong>form</strong> is submitted, the <strong>name</strong> of the fields that accept input and the <strong>value</strong> of those fields are sent as <strong>name=value</strong> pairs.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">Form Validation</h3>
+                    <div class="content">
+                        <p> 
+                            Client-side validations happen in the browser before information is sent to a server.<br>
+                            Adding the <strong>required</strong> attribute to an input related element will validate that the input field has information in it.<br>
+                            Assigning a value to the <strong>min</strong> attribute of a number input element will validate an acceptable minimum value.<br>
+                            Assigning a value to the <strong>max</strong> attribute of a number input element will validate an acceptable maximum value.<br>
+                            Assigning a value to the <strong>minlength</strong> attribute of a text input element will validate an acceptable minimum number of characters.<br>
+                            Assigning a value to the <strong>maxlength</strong> attribute of a text input element will validate an acceptable maximum number of characters.<br>
+                            Assigning a regex to <strong>pattern</strong> matches the input to the provided regex.<br>
+                            If validations on a <strong>form</strong> do not pass, the user gets a message explaining why and the <strong>form</strong> cannot be submitted.
+                        </p>
+                    </div>
+                </article>
             </section>
         </main>
     </body>

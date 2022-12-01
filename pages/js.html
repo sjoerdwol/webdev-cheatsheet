@@ -26,6 +26,19 @@
             <section>
                 <h2 class="topic_title">JavaScript</h2>
                 <article>
+                    <h3 class="article_title">Script Element</h3>
+                    <div class="content">
+                        <p>
+                            The <strong>script</strong> element has an opening and closing tag. You can embed JavaScript code inbetween the opening and closing <strong>script</strong> tags.<br>
+                            You link to external JavaScript files with the src attribute in the opening <strong>script</strong> tag.<br>
+                            By default, scripts are loaded and executed as soon as the HTML parser encounters them in the HTML file.<br>
+                            The HTML parser waits to load the entire script before from proceeding to parse the rest of the page elements.<br>
+                            The <strong>defer</strong> attribute ensures that the entire HTML file has been parsed before the script is executed.<br>
+                            The <strong>async</strong> attribute will allow the HTML parser to continue parsing as the script is being downloaded, but will execute immediately after it has been downloaded.
+                        </p>
+                    </div>
+                </article>
+                <article>
                     <h3 class="article_title">Variables</h3>
                     <div class="content">
                         <p>
@@ -77,14 +90,14 @@
                     <h3 class="article_title">Scope</h3>
                     <div class="content">
                         <p>
-                           <strong>Scope</strong> refers to where variables can be accessed throughout the program, and is determined by where and how they are declared.<br>
-                           <strong>Blocks</strong> are statements that exist within curly braces <strong>{}</strong>.<br>
-                           <strong>Global scope</strong> refers to the context within which variables are accessible to every part of the program.<br>
-                           <strong>Global variables</strong> are variables that exist within global scope.<br>
-                           <strong>Block scope</strong> refers to the context within which variables are accessible only within the block they are defined.<br>
-                           <strong>Local variables</strong> are variables that exist within block scope.<br>
-                           <strong>Global namespace</strong> is the space in our code that contains globally scoped information.<br>
-                           <strong>Scope pollution</strong> is when too many variables exist in a namespace or variable names are reused.
+                            <strong>Scope</strong> refers to where variables can be accessed throughout the program, and is determined by where and how they are declared.<br>
+                            <strong>Blocks</strong> are statements that exist within curly braces <strong>{}</strong>.<br>
+                            <strong>Global scope</strong> refers to the context within which variables are accessible to every part of the program.<br>
+                            <strong>Global variables</strong> are variables that exist within global scope.<br>
+                            <strong>Block scope</strong> refers to the context within which variables are accessible only within the block they are defined.<br>
+                            <strong>Local variables</strong> are variables that exist within block scope.<br>
+                            <strong>Global namespace</strong> is the space in our code that contains globally scoped information.<br>
+                            <strong>Scope pollution</strong> is when too many variables exist in a namespace or variable names are reused.
                         </p>
                     </div>
                 </article>
@@ -92,19 +105,19 @@
                     <h3 class="article_title">Arrays</h3>
                     <div class="content">
                         <p>
-                           <strong>Arrays</strong> are lists that store data in JavaScript.<br>
-                           <strong>Arrays</strong> are created with brackets <strong>[]</strong>.<br>
-                           Each item inside of an array is at a numbered position, or index, starting at <strong>0</strong>.<br>
-                           We can access one item in an array using its index, with syntax like <strong>myArray[0]</strong>.<br>
-                           We can also change an item in an array using its index, with syntax like <strong>myArray[0] = 'new string'</strong>.<br>
-                           Arrays have a <strong>length</strong> property, which allows you to see how many items are in an array.<br>
-                           Arrays have their own methods, including <strong>.push()</strong> and <strong>.pop()</strong>, which add and remove items from an array, respectively.<br>
-                           Arrays have many methods that perform different tasks, such as <strong>.slice()</strong> and <strong>.shift()</strong>.<br>
-                           Some built-in methods are mutating, meaning the method will change the array, while others are not mutating. You can always check the documentation.<br>
-                           Variables that contain arrays can be declared with <strong>let</strong> or <strong>const</strong>. Even when declared with <strong>const</strong>, arrays are still mutable. However, a variable declared with <strong>const</strong> cannot be reassigned.<br>
-                           Arrays mutated inside of a function will keep that change even outside the function.<br>
-                           Arrays can be nested inside other arrays.<br>
-                           To access elements in nested arrays chain indices using bracket notation.
+                            <strong>Arrays</strong> are lists that store data in JavaScript.<br>
+                            <strong>Arrays</strong> are created with brackets <strong>[]</strong>.<br>
+                            Each item inside of an array is at a numbered position, or index, starting at <strong>0</strong>.<br>
+                            We can access one item in an array using its index, with syntax like <strong>myArray[0]</strong>.<br>
+                            We can also change an item in an array using its index, with syntax like <strong>myArray[0] = 'new string'</strong>.<br>
+                            Arrays have a <strong>length</strong> property, which allows you to see how many items are in an array.<br>
+                            Arrays have their own methods, including <strong>.push()</strong> and <strong>.pop()</strong>, which add and remove items from an array, respectively.<br>
+                            Arrays have many methods that perform different tasks, such as <strong>.slice()</strong> and <strong>.shift()</strong>.<br>
+                            Some built-in methods are mutating, meaning the method will change the array, while others are not mutating. You can always check the documentation.<br>
+                            Variables that contain arrays can be declared with <strong>let</strong> or <strong>const</strong>. Even when declared with <strong>const</strong>, arrays are still mutable. However, a variable declared with <strong>const</strong> cannot be reassigned.<br>
+                            Arrays mutated inside of a function will keep that change even outside the function.<br>
+                            Arrays can be nested inside other arrays.<br>
+                            To access elements in nested arrays chain indices using bracket notation.
                         </p>
                     </div>
                 </article>
@@ -112,13 +125,13 @@
                     <h3 class="article_title">Loops</h3>
                     <div class="content">
                         <p>
-                           Loops perform repetitive actions so we don’t have to code that process manually every time.<br>
-                           A <strong>for</strong> loop loops for an specific amount of time.<br>
-                           A nested <strong>for</strong> loop is a loop inside another loop.<br>
-                           <strong>while</strong> loops allow for different types of stopping conditions.<br>
-                           Stopping conditions are crucial for avoiding infinite loops.<br>
-                           <strong>do...while</strong> a loops run code at least once— only checking the stopping condition after the first execution.<br>
-                           The <strong>break</strong> keyword allows programs to leave a loop during the execution of its block.
+                            Loops perform repetitive actions so we don’t have to code that process manually every time.<br>
+                            A <strong>for</strong> loop loops for an specific amount of time.<br>
+                            A nested <strong>for</strong> loop is a loop inside another loop.<br>
+                            <strong>while</strong> loops allow for different types of stopping conditions.<br>
+                            Stopping conditions are crucial for avoiding infinite loops.<br>
+                            <strong>do...while</strong> a loops run code at least once— only checking the stopping condition after the first execution.<br>
+                            The <strong>break</strong> keyword allows programs to leave a loop during the execution of its block.
                         </p>
                     </div>
                 </article>
@@ -126,15 +139,15 @@
                     <h3 class="article_title">Objects</h3>
                     <div class="content">
                         <p>
-                           Objects store collections of key-value pairs.<br>
-                           Each key-value pair is a property—when a property is a function it is known as a method.<br>
-                           An object literal is composed of comma-separated key-value pairs surrounded by curly braces.<br>
-                           You can access, add or edit a property within an object by using dot notation or bracket notation.<br>
-                           We can add methods to our object literals using key-value syntax with anonymous function expressions as values or by using the new ES6 method syntax.<br>
-                           We can navigate complex, nested objects by chaining operators.<br>
-                           Objects are mutable—we can change their properties even when they’re declared with <strong>const</strong>.<br>
-                           Objects are passed by reference— when we make changes to an object passed into a function, those changes are permanent.<br>
-                           We can iterate through objects using the <strong>for...in</strong> syntax.
+                            Objects store collections of key-value pairs.<br>
+                            Each key-value pair is a property—when a property is a function it is known as a method.<br>
+                            An object literal is composed of comma-separated key-value pairs surrounded by curly braces.<br>
+                            You can access, add or edit a property within an object by using dot notation or bracket notation.<br>
+                            We can add methods to our object literals using key-value syntax with anonymous function expressions as values or by using the new ES6 method syntax.<br>
+                            We can navigate complex, nested objects by chaining operators.<br>
+                            Objects are mutable—we can change their properties even when they’re declared with <strong>const</strong>.<br>
+                            Objects are passed by reference— when we make changes to an object passed into a function, those changes are permanent.<br>
+                            We can iterate through objects using the <strong>for...in</strong> syntax.
                         </p>
                     </div>
                 </article>
@@ -142,17 +155,16 @@
                     <h3 class="article_title">Advanced Objects</h3>
                     <div class="content">
                         <p>
-                           The object that a method belongs to is called the calling object.<br>
-                           The <strong>this</strong> keyword refers to the calling object and can be used to access properties of the calling object.<br>
-                           Methods do not automatically have access to other internal properties of the calling object.<br>
-                           The value of <strong>this</strong> depends on where the <strong>this</strong> is being accessed from.<br>
-                           We cannot use arrow functions as methods if we want to access other internal properties.<br>
-                           JavaScript objects do not have built-in privacy, rather there are conventions to follow to notify other developers about the intent of the code.<br>
-                           The usage of an underscore before a property name means that the original developer did not intend for that property to be directly changed.<br>
-                           Setters and getter methods allow for more detailed ways of accessing and assigning properties.<br>
-                           Factory functions allow us to create object instances quickly and repeatedly.<br>
-                           There are different ways to use object destructuring: one way is the property value shorthand and another is destructured assignment.<br>
-
+                            The object that a method belongs to is called the calling object.<br>
+                            The <strong>this</strong> keyword refers to the calling object and can be used to access properties of the calling object.<br>
+                            Methods do not automatically have access to other internal properties of the calling object.<br>
+                            The value of <strong>this</strong> depends on where the <strong>this</strong> is being accessed from.<br>
+                            We cannot use arrow functions as methods if we want to access other internal properties.<br>
+                            JavaScript objects do not have built-in privacy, rather there are conventions to follow to notify other developers about the intent of the code.<br>
+                            The usage of an underscore before a property name means that the original developer did not intend for that property to be directly changed.<br>
+                            Setters and getter methods allow for more detailed ways of accessing and assigning properties.<br>
+                            Factory functions allow us to create object instances quickly and repeatedly.<br>
+                            There are different ways to use object destructuring: one way is the property value shorthand and another is destructured assignment.<br>
                         </p>
                     </div>
                 </article>
@@ -160,12 +172,12 @@
                     <h3 class="article_title">Iterators</h3>
                     <div class="content">
                         <p>
-                           <strong>.forEach()</strong> is used to execute the same code on every element in an array but does not change the array and returns <strong>undefined</strong>.<br>
-                           <strong>.map()</strong> executes the same code on every element in an array and returns a new array with the updated elements.<br>
-                           <strong>.filter()</strong> checks every element in an array to see if it meets certain criteria and returns a new array with the elements that return truthy for the criteria.<br>
-                           <strong>.findIndex()</strong> returns the index of the first element of an array that satisfies a condition in the callback function. It returns <strong>-1</strong> if none of the elements in the array satisfies the condition.<br>
-                           <strong>.reduce()</strong> iterates through an array and takes the values of the elements and returns a single value.<br>
-                           All iterator methods take a callback function, which can be a pre-defined function, a function expression, or an arrow function.
+                            <strong>.forEach()</strong> is used to execute the same code on every element in an array but does not change the array and returns <strong>undefined</strong>.<br>
+                            <strong>.map()</strong> executes the same code on every element in an array and returns a new array with the updated elements.<br>
+                            <strong>.filter()</strong> checks every element in an array to see if it meets certain criteria and returns a new array with the elements that return truthy for the criteria.<br>
+                            <strong>.findIndex()</strong> returns the index of the first element of an array that satisfies a condition in the callback function. It returns <strong>-1</strong> if none of the elements in the array satisfies the condition.<br>
+                            <strong>.reduce()</strong> iterates through an array and takes the values of the elements and returns a single value.<br>
+                            All iterator methods take a callback function, which can be a pre-defined function, a function expression, or an arrow function.
                         </p>
                     </div>
                 </article>
@@ -173,10 +185,39 @@
                     <h3 class="article_title">Errors and Debugging</h3>
                     <div class="content">
                         <p>
-                           <strong>First step:</strong> Review stack trace.<br>
-                           <strong>Second step:</strong> Using logging to discover silent bugs.<br>
-                           <strong>Third step:</strong> Research in documentation (e.g. MDN).<br>
-                           <strong>First step:</strong> StackOverflow!!!.<br>
+                            <strong>First step:</strong> Review stack trace.<br>
+                            <strong>Second step:</strong> Using logging to discover silent bugs.<br>
+                            <strong>Third step:</strong> Research in documentation (e.g. MDN).<br>
+                            <strong>First step:</strong> StackOverflow!!!.<br>
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">JavaScript and the DOM</h3>
+                    <div class="content">
+                        <p>
+                            The <strong>document</strong> keyword grants access to the root of the DOM in JavaScript.<br>
+                            The DOM Interface allows you to select a specific element with CSS selectors by using the <strong>.querySelector()</strong> method.<br>
+                            You can access an element directly by its ID with the <strong>.getElementById()</strong> method which returns a single element.<br>
+                            You can access an array of elements with <strong>.getElementsByClassName()</strong> and <strong>.getElementsByTagName()</strong>, then call a single element by referencing its placement in the array.<br>
+                            The <strong>.innerHTML</strong> and <strong>.style</strong> properties allow you to modify an element by changing its contents or style respectively.<br>
+                            You can create, append, and remove elements by using the <strong>.createElement()</strong>, <strong>.appendChild()</strong> and <strong>.removeChild()</strong> methods respectively.<br>
+                            The <strong>.onclick</strong> property can add interactivity to a DOM element based on a click event.<br>
+                            The <strong>.children</strong> property returns a list of an element’s children and the <strong>.parentNode</strong> property returns the element’s closest connected node in the direction towards the root.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">DOM Events with JavaScript</h3>
+                    <div class="content">
+                        <p>
+                            You can register events to DOM elements using the <strong>addEventListener()</strong> method.<br>
+                            The <strong>addEventListener()</strong> method takes to arguments: an event type and an event handler function.<br>
+                            When an event is triggered on the event target, the registered event handler function executes.<br>
+                            Event handler functions can also be registered as values of <strong>onevent</strong> properties of their event target.<br>
+                            Event object properties like <strong>.target</strong>, <strong>.type</strong>, and <strong>.timeStamp</strong> are used to provide information about the event.<br>
+                            The <strong>addEventListener()</strong> method can be used to add multiple event handler functions to a single event.<br>
+                            The <strong>removeEventListener()</strong> method stops specific event handlers from “listening” for specific events firing.
                         </p>
                     </div>
                 </article>
