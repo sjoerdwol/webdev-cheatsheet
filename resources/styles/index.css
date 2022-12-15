@@ -149,3 +149,8 @@ td {
     border-left: 1px solid #1D2D44;
     border-right: 1px solid #1D2D44;
 }
+
+/* CSS STYLING */
+img {
+    display: block;
+}

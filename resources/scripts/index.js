@@ -4,11 +4,13 @@ const nav_html = document.getElementById('nav_html');
 const nav_css = document.getElementById('nav_css');
 const nav_js = document.getElementById('nav_js');
 const nav_react = document.getElementById('nav_react');
+const nav_elements = [nav_home, nav_html, nav_css, nav_js, nav_react];
 const sections = document.getElementsByTagName('section');
 
 //ASSIGNMENTS
-nav_home.onmousedown = navOnClick;
-nav_html.onmousedown = navOnClick;
+nav_elements.forEach(element => {
+  element.onmousedown = navOnClick;
+});
 
 //FUNCTIONS
 function navOnClick(event) {
