@@ -18,8 +18,8 @@
                     <li id="nav_home">Home</li>
                     <li id="nav_html">HTML</li>
                     <li id="nav_css">CSS</li>
-                    <li id="nav_js"><a href="./pages/js.html" class="nav_link">JS</a></li>
-                    <li id="nav_react"><a href="./pages/react.html" class="nav_link">React</a></li>
+                    <li id="nav_js">JS</li>
+                    <li id="nav_react">React</li>
                 </ul>
             </nav>
         </header>
@@ -411,6 +411,260 @@
                             All the animation properties are added to the same animation property.
                         </p>
                     </div>
+                </article>
+            </section>
+            <section class="hidden">
+                <h2 class="topic_title">JavaScript</h2>
+                <article>
+                    <h3 class="article_title">Script Element</h3>
+                    <div class="content">
+                        <p>
+                            The <strong>script</strong> element has an opening and closing tag. You can embed JavaScript code inbetween the opening and closing <strong>script</strong> tags.<br>
+                            You link to external JavaScript files with the src attribute in the opening <strong>script</strong> tag.<br>
+                            By default, scripts are loaded and executed as soon as the HTML parser encounters them in the HTML file.<br>
+                            The HTML parser waits to load the entire script before from proceeding to parse the rest of the page elements.<br>
+                            The <strong>defer</strong> attribute ensures that the entire HTML file has been parsed before the script is executed.<br>
+                            The <strong>async</strong> attribute will allow the HTML parser to continue parsing as the script is being downloaded, but will execute immediately after it has been downloaded.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">Variables</h3>
+                    <div class="content">
+                        <p>
+                            We learned the following on variables:<br>
+                            Variables hold reusable data in a program and associate it with a name.<br>
+                            The <strong>var</strong> keyword is used in pre-ES6 versions of JS.<br>
+                            <strong>let</strong> is the preferred way to declare a variable when it can be reassigned, and <strong>const</strong> is the preferred way to declare a variable with a constant value.<br>
+                            Variables that have not been initialized store the primitive data type <strong>undefined</strong>.<br>
+                            Mathematical assignment operators make it easy to calculate a new value and assign it to the same variable.<br>
+                            The <strong>+</strong> operator is used to concatenate strings including string values held in variables.<br>
+                            In ES6, template literals use backticks <strong>`</strong> and <strong>${}</strong> to interpolate values into a string.<br>
+                            The <strong>typeof</strong> keyword returns the data type (as a string) of a value.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">Conditionals</h3>
+                    <div class="content">
+                        <p>
+                            An <strong>if</strong> checks a condition and will execute a task if that condition evaluates to <strong>true</strong>.<br>
+                            <strong>if...else</strong> statements make binary decisions and execute different code blocks based on a provided condition.<br>
+                            We can add more conditions using <strong>else if</strong> statements.<br>
+                            Comparison operators, including <strong><</strong>, <strong>></strong>, <strong><=</strong>, <strong>>=</strong>, <strong>===</strong> and <strong>!==</strong> can compare to values.<br>
+                            The logical "and" operator, <strong>&&</strong>, checks if both provided expressions are truthy.<br>
+                            The logical "or" operator, <strong>||</strong>, checks if either provided expression is truthy.<br>
+                            The bang operator, <strong>!</strong>, switches the truthiness and falsiness of a value.<br>
+                            The ternary operator, <strong>?</strong>, is shorthand to simplify concise <strong>if...else</strong> statements.<br>
+                            A <strong>switch</strong> statement can be used to simplify the process of writing multiple <strong>else if</strong> statements. <br>
+                            The <strong>break</strong> keyword stops the remaining <strong>cases</strong> from being checked and executed in a <strong>switch</strong> statement.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">Functions</h3>
+                    <div class="content">
+                        <p>
+                            A <strong>function</strong> is a reusable block of code that groups together a sequence of statements to perform a specific task.<br>
+                            A <strong>function</strong> declaration: function greetWorld(){} <br>
+                            A parameter is a named variable inside a function’s block which will be assigned the value of the argument passed in when the function is invoked.<br>
+                            To call a funtion in your code: greetWorld(); <br>
+                            ES6 introduces new ways of handling arbitrary parameters through default parameters which allow us to assign a default value to a parameter in case no argument is passed into the function.<br>
+                            To return a value from a function, we use a <strong>return</strong> statement.<br>
+                            To define a function using <strong>function expressions</strong>: const calculateArea = function(){};<br>
+                            To define a function using <strong>arrow function notation</strong>: const calculateArea = () => {};<br>
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">Scope</h3>
+                    <div class="content">
+                        <p>
+                            <strong>Scope</strong> refers to where variables can be accessed throughout the program, and is determined by where and how they are declared.<br>
+                            <strong>Blocks</strong> are statements that exist within curly braces <strong>{}</strong>.<br>
+                            <strong>Global scope</strong> refers to the context within which variables are accessible to every part of the program.<br>
+                            <strong>Global variables</strong> are variables that exist within global scope.<br>
+                            <strong>Block scope</strong> refers to the context within which variables are accessible only within the block they are defined.<br>
+                            <strong>Local variables</strong> are variables that exist within block scope.<br>
+                            <strong>Global namespace</strong> is the space in our code that contains globally scoped information.<br>
+                            <strong>Scope pollution</strong> is when too many variables exist in a namespace or variable names are reused.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">Arrays</h3>
+                    <div class="content">
+                        <p>
+                            <strong>Arrays</strong> are lists that store data in JavaScript.<br>
+                            <strong>Arrays</strong> are created with brackets <strong>[]</strong>.<br>
+                            Each item inside of an array is at a numbered position, or index, starting at <strong>0</strong>.<br>
+                            We can access one item in an array using its index, with syntax like <strong>myArray[0]</strong>.<br>
+                            We can also change an item in an array using its index, with syntax like <strong>myArray[0] = 'new string'</strong>.<br>
+                            Arrays have a <strong>length</strong> property, which allows you to see how many items are in an array.<br>
+                            Arrays have their own methods, including <strong>.push()</strong> and <strong>.pop()</strong>, which add and remove items from an array, respectively.<br>
+                            Arrays have many methods that perform different tasks, such as <strong>.slice()</strong> and <strong>.shift()</strong>.<br>
+                            Some built-in methods are mutating, meaning the method will change the array, while others are not mutating. You can always check the documentation.<br>
+                            Variables that contain arrays can be declared with <strong>let</strong> or <strong>const</strong>. Even when declared with <strong>const</strong>, arrays are still mutable. However, a variable declared with <strong>const</strong> cannot be reassigned.<br>
+                            Arrays mutated inside of a function will keep that change even outside the function.<br>
+                            Arrays can be nested inside other arrays.<br>
+                            To access elements in nested arrays chain indices using bracket notation.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">Loops</h3>
+                    <div class="content">
+                        <p>
+                            Loops perform repetitive actions so we don’t have to code that process manually every time.<br>
+                            A <strong>for</strong> loop loops for an specific amount of time.<br>
+                            A nested <strong>for</strong> loop is a loop inside another loop.<br>
+                            <strong>while</strong> loops allow for different types of stopping conditions.<br>
+                            Stopping conditions are crucial for avoiding infinite loops.<br>
+                            <strong>do...while</strong> a loops run code at least once— only checking the stopping condition after the first execution.<br>
+                            The <strong>break</strong> keyword allows programs to leave a loop during the execution of its block.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">Objects</h3>
+                    <div class="content">
+                        <p>
+                            Objects store collections of key-value pairs.<br>
+                            Each key-value pair is a property—when a property is a function it is known as a method.<br>
+                            An object literal is composed of comma-separated key-value pairs surrounded by curly braces.<br>
+                            You can access, add or edit a property within an object by using dot notation or bracket notation.<br>
+                            We can add methods to our object literals using key-value syntax with anonymous function expressions as values or by using the new ES6 method syntax.<br>
+                            We can navigate complex, nested objects by chaining operators.<br>
+                            Objects are mutable—we can change their properties even when they’re declared with <strong>const</strong>.<br>
+                            Objects are passed by reference— when we make changes to an object passed into a function, those changes are permanent.<br>
+                            We can iterate through objects using the <strong>for...in</strong> syntax.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">Advanced Objects</h3>
+                    <div class="content">
+                        <p>
+                            The object that a method belongs to is called the calling object.<br>
+                            The <strong>this</strong> keyword refers to the calling object and can be used to access properties of the calling object.<br>
+                            Methods do not automatically have access to other internal properties of the calling object.<br>
+                            The value of <strong>this</strong> depends on where the <strong>this</strong> is being accessed from.<br>
+                            We cannot use arrow functions as methods if we want to access other internal properties.<br>
+                            JavaScript objects do not have built-in privacy, rather there are conventions to follow to notify other developers about the intent of the code.<br>
+                            The usage of an underscore before a property name means that the original developer did not intend for that property to be directly changed.<br>
+                            Setters and getter methods allow for more detailed ways of accessing and assigning properties.<br>
+                            Factory functions allow us to create object instances quickly and repeatedly.<br>
+                            There are different ways to use object destructuring: one way is the property value shorthand and another is destructured assignment.<br>
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">Iterators</h3>
+                    <div class="content">
+                        <p>
+                            <strong>.forEach()</strong> is used to execute the same code on every element in an array but does not change the array and returns <strong>undefined</strong>.<br>
+                            <strong>.map()</strong> executes the same code on every element in an array and returns a new array with the updated elements.<br>
+                            <strong>.filter()</strong> checks every element in an array to see if it meets certain criteria and returns a new array with the elements that return truthy for the criteria.<br>
+                            <strong>.findIndex()</strong> returns the index of the first element of an array that satisfies a condition in the callback function. It returns <strong>-1</strong> if none of the elements in the array satisfies the condition.<br>
+                            <strong>.reduce()</strong> iterates through an array and takes the values of the elements and returns a single value.<br>
+                            All iterator methods take a callback function, which can be a pre-defined function, a function expression, or an arrow function.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">Errors and Debugging</h3>
+                    <div class="content">
+                        <p>
+                            <strong>First step:</strong> Review stack trace.<br>
+                            <strong>Second step:</strong> Using logging to discover silent bugs.<br>
+                            <strong>Third step:</strong> Research in documentation (e.g. MDN).<br>
+                            <strong>First step:</strong> StackOverflow!!!.<br>
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">JavaScript and the DOM</h3>
+                    <div class="content">
+                        <p>
+                            The <strong>document</strong> keyword grants access to the root of the DOM in JavaScript.<br>
+                            The DOM Interface allows you to select a specific element with CSS selectors by using the <strong>.querySelector()</strong> method.<br>
+                            You can access an element directly by its ID with the <strong>.getElementById()</strong> method which returns a single element.<br>
+                            You can access an array of elements with <strong>.getElementsByClassName()</strong> and <strong>.getElementsByTagName()</strong>, then call a single element by referencing its placement in the array.<br>
+                            The <strong>.innerHTML</strong> and <strong>.style</strong> properties allow you to modify an element by changing its contents or style respectively.<br>
+                            You can create, append, and remove elements by using the <strong>.createElement()</strong>, <strong>.appendChild()</strong> and <strong>.removeChild()</strong> methods respectively.<br>
+                            The <strong>.onclick</strong> property can add interactivity to a DOM element based on a click event.<br>
+                            The <strong>.children</strong> property returns a list of an element’s children and the <strong>.parentNode</strong> property returns the element’s closest connected node in the direction towards the root.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">DOM Events with JavaScript</h3>
+                    <div class="content">
+                        <p>
+                            You can register events to DOM elements using the <strong>addEventListener()</strong> method.<br>
+                            The <strong>addEventListener()</strong> method takes to arguments: an event type and an event handler function.<br>
+                            When an event is triggered on the event target, the registered event handler function executes.<br>
+                            Event handler functions can also be registered as values of <strong>onevent</strong> properties of their event target.<br>
+                            Event object properties like <strong>.target</strong>, <strong>.type</strong>, and <strong>.timeStamp</strong> are used to provide information about the event.<br>
+                            The <strong>addEventListener()</strong> method can be used to add multiple event handler functions to a single event.<br>
+                            The <strong>removeEventListener()</strong> method stops specific event handlers from “listening” for specific events firing.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">JavaScript Classes</h3>
+                    <div class="content">
+                        <p>
+                            <strong>Classes</strong> are templates for objects.<br>
+                            JavaScript calls a <strong>constructor</strong> method when we create a new instance of a class.<br>
+                            <strong>Inheritance</strong> is when we create a parent class with properties and methods that we can extend to child classes.<br>
+                            We use the <strong>extends</strong> keyword to create a subclass.<br>
+                            The <strong>super</strong> keyword calls the <strong>constructor()</strong> of a parent class.<br>
+                            Static methods are called on the class, but not on instances of the class.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">JavaScript Modules</h3>
+                    <div class="content">
+                        <p>
+                            <strong>Modules</strong> are reusable pieces of code in a file that can be exported and then imported for use in another file.<br>
+                            This modular strategy is sometimes called <em>separation of concerns</em> and is useful for debugging, reusing code and keeping information private.<br>
+                            <strong>Modules</strong> are implemented using the <strong>export</strong> and <strong>import</strong> keywords.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">JavaScript Error Handling</h3>
+                    <div class="content">
+                        <p>
+                            <strong>Errors</strong> will prevent a program from executing unless it is handled.<br>
+                            <strong>Errors</strong> can be created using the <strong>Error()</strong> function.<br>
+                            <strong>Errors</strong> can be thrown using the <strong>throw</strong> keyword.<br>
+                            The <strong>try...catch</strong> statement can handle thrown errors.<br>
+                            In the <strong>try</strong> block, errors can be anticipated, while the cought error will be handled in the <strong>catch</strong> block.<br>
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">JavaScript Testing</h3>
+                    <div class="content">
+                        <p>
+                            <strong>Mocha</strong> is a testing framework for JavaScript which can be installed using npm.<br>
+                            You can organize your tests using the <strong>describe()</strong> and <strong>it()</strong> keyword.<br>
+                            <strong>Assertions</strong>> are made with the <strong>assert</strong> keyword imported from node itself.<br>
+                            Some possibilities are <strong>assert.equal()</strong>, <strong>assert.strictEqual()</strong> and <strong>assert.deepEqual()</strong>. <br>
+                            Tests should run isolated and should be written in the four phases <em>Setup, Exercise, Verify and Teardown</em>.<br>
+                            It is advised to use the Red-Green-Refactor-Cycle of the Test-Driven-Development-Methodology.
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <section class="hidden">
+                <h2 class="topic_title">React</h2>
+                <article>
+                    <h3 class="article_title">to be completed...</h3>
+                    <div class="content"></div>
                 </article>
             </section>
         </main>
