@@ -33,6 +33,10 @@ main {
     padding: 0 10% 0 10%;
 }
 
+.hidden {
+    display: none;
+}
+
 /* Header Styling */
 .active {
     text-decoration: underline;
@@ -75,10 +79,6 @@ main {
 /* Section Styling */
 section {
     margin: 0;
-}
-
-.html {
-    display: none;
 }
 
 .topic_title {

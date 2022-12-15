@@ -3,8 +3,9 @@
     <head>
         <title>Sjoerd's Cheat Sheet</title>
         <!--Imports-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="resources/styles/index.css">
-        
         <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
     </head>
@@ -14,12 +15,11 @@
             <h4 id="title">Sjoerd's Cheat Sheet</h4>
             <nav id="top_level">
                 <ul>
-                    <li>Home</li>
-                    <li>HTML</li>
-                    <li><a href="./pages/css.html" class="nav_link">CSS</a></li>
-                    <li><a href="./pages/js.html" class="nav_link">JS</a></li>
-                    <li><a href="./pages/react.html" class="nav_link">React</a></li>
-                    <li><a href="./pages/redux.html" class="nav_link">Redux</a></li>
+                    <li id="nav_home">Home</li>
+                    <li id="nav_html">HTML</li>
+                    <li id="nav_css"><a href="./pages/css.html" class="nav_link">CSS</a></li>
+                    <li id="nav_js"><a href="./pages/js.html" class="nav_link">JS</a></li>
+                    <li id="nav_react"><a href="./pages/react.html" class="nav_link">React</a></li>
                 </ul>
             </nav>
         </header>
@@ -34,7 +34,7 @@
                     </div>
                 </article>
             </section>
-            <section class="html">
+            <section class="html, hidden">
                 <h2 class="topic_title">HTML</h2>
                 <article>
                     <h3 class="article_title">Starting a new HTML file</h3>
@@ -174,5 +174,6 @@
                 </article>
             </section>
         </main>
+        <script src="./resources/scripts/index.js"></script>
     </body>
 </html>
