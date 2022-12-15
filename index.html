@@ -14,8 +14,8 @@
             <h4 id="title">Sjoerd's Cheat Sheet</h4>
             <nav id="top_level">
                 <ul>
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li><a href="./pages/html.html" class="nav_link">HTML</a></li>
+                    <li>Home</li>
+                    <li>HTML</li>
                     <li><a href="./pages/css.html" class="nav_link">CSS</a></li>
                     <li><a href="./pages/js.html" class="nav_link">JS</a></li>
                     <li><a href="./pages/react.html" class="nav_link">React</a></li>
@@ -24,13 +24,152 @@
             </nav>
         </header>
         <main>
-            <section id="welcome_content">
-                <h2 class="welcome_title">Welcome!</h2>
+            <section class="welcome">
+                <h2 class="topic_title">Welcome!</h2>
                 <article>
-                    <h3>This is my Cheat Sheet!</h3>
+                    <h3 class="article_title">This is my Cheat Sheet!</h3>
                     <div class="content">
-                        <p> Here you can find small summaries of different tags, selectors etc. to help yourself in HTML, CSS, JavaScript and so on.<br>
-                            The following topics are currently covered on this cheat sheet:</p>
+                        <p> Here you can find shortened summaries of all the content <br>
+                            from the Front-End Engineer Career Path on Codecademy!</p>
+                    </div>
+                </article>
+            </section>
+            <section class="html">
+                <h2 class="topic_title">HTML</h2>
+                <article>
+                    <h3 class="article_title">Starting a new HTML file</h3>
+                    <div class="content">
+                        <p> To start a new HTML file, you need to create an .html file in your working directory.<br>
+                            It's recommended to name your starting page 'index.html'.<br />
+                            In said HTML file, you need to insert the following HTML tags in this order: <br>&lt;!DOCTYPE html&gt;, &lt;html&gt; (opening and closing tag), 
+                            &lt;head&gt; (opening and closing tag) and &lt;body&gt; (opening and closing tag).<br> 
+                            In the end, your final HTML "skeleton" should look like this:<br><br>
+                        </p> 
+                        <pre>
+                            <code>
+                                &lt;!DOCTYPE html&gt;
+                                &lt;html&gt;
+                                &lt;head&gt;
+                                &lt;/head&gt;
+                                &lt;body&gt;
+                                &lt;/body&gt;
+                                &lt;/html&gt;
+                            </code>
+                        </pre>  
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">Different text tags in HTML</h3>
+                    <div class="content">
+                        <p> <strong>The &lt;p&gt; tag</strong> defines a paragraph of text. It's a block element. 
+                            Inside it, we can add any inline element we like, like &lt;span&gt; or &lt;a&gt;, but no block elements.<br>
+                            By default, browsers style a paragraph with a margin on top and at the bottom.<br> 
+                            This causes two consecutive paragraphs to be spaced, replicating what we think of a “paragraph” in printed text.<br>
+                            <br>
+                            <strong>The &lt;span&gt; tag</strong> tag is an inline tag that can be used to create a section in a paragraph that can be targeted using CSS.<br>
+                            <br>
+                            <strong>The &lt;blockquote&gt; HTML tag</strong> is useful to insert citations in the text. Browsers by default apply a margin to the blockquote element.<br>
+                            <br>
+                            <strong>The &lt;code&gt; tag</strong> is especially useful to show code, because browsers give it a monospaced font.<br>
+                            This tag is typically wrapped in a pre tag, because the code element ignores whitespace and line breaks.<br>
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">Tables in HTML</h3>
+                    <div class="content">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Tag</th>
+                                    <th>Name</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>&lt;table&gt;</td>
+                                    <td class="middle">Table</td>
+                                    <td>The wrapper element for all HTML tables.</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;thead&gt;</td>
+                                    <td class="middle">Table Head</td>
+                                    <td>The set of rows defining the column headers in a table.</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;tbody&gt;</td>
+                                    <td class="middle">Table Body</td>
+                                    <td>The set of rows containing the actual table data.</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;tr&gt;</td>
+                                    <td class="middle">Table Row</td>
+                                    <td>The table row container.</td>
+                                </tr>
+                                <tr>
+                                    <td>&lt;td&gt;</td>
+                                    <td class="middle">Table Data</td>
+                                    <td>The table data container inside a &lt;tr&gt;.</td>
+                                </tr>
+                                <tr>
+                                    <td class="last">&lt;tfoot&gt;</td>
+                                    <td class="middle last">Table Foot</td>
+                                    <td class="last">The set of rows defining the footer in a table.</td>
+                                </tr>
+                                <tr>
+                                    <td class="empty" colspan="3"></td>
+                                </tr>
+                                <tr>
+                                    <td>colspan</td>
+                                    <td class="middle">Column Span</td>
+                                    <td>Defines how many columns a td element should span.</td>
+                                </tr>
+                                <tr>
+                                    <td class="last">rowspan</td>
+                                    <td class="middle last">Row Span</td>
+                                    <td class="last">Defines how many rows a td element should span.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">HTML Forms</h3>
+                    <div class="content">
+                        <p> 
+                            The purpose of a <strong>form</strong> is to allow users to input information and send it.<br>
+                            The <strong>form</strong>’s <strong>action</strong> attribute determines where the form’s information goes.<br>
+                            The <strong>form</strong>’s <strong>method</strong> attribute determines how the information is sent and processed.<br>
+                            To add fields for users to input information we use the <strong>input</strong> element and set the <strong>type</strong> attribute to a field of our choosing.<br>
+                            Setting <strong>type</strong> to <strong>"text"</strong> creates a single row field for text input.<br>
+                            Setting <strong>type</strong> to <strong>"password"</strong> creates a single row field that censors text input.<br>
+                            Setting <strong>type</strong> to <strong>"number"</strong> creates a single row field for number input.<br>
+                            Setting <strong>type</strong> to <strong>"range"</strong> creates a slider to select from a range of numbers.<br>
+                            Setting <strong>type</strong> to <strong>"checkbox"</strong> creates a single checkbox that can be paired with other checkboxes.<br>
+                            Setting <strong>type</strong> to <strong>"radio"</strong> creates a radio button that can be paired with other radio buttons.<br>
+                            Setting <strong>type</strong> to <strong>"text"</strong> and adding the <strong>list</strong> attribute will pair the <strong>input</strong> with a <strong>datalist</strong> 
+                            element if the <strong>list</strong> of <strong>input</strong> and the <strong>id</strong> of <strong>datalist</strong> are the same.<br>
+                            Setting <strong>type</strong> to <strong>"submit"</strong> creates a submit button.<br>
+                            A <strong>select</strong> element is populated with <strong>option</strong> elements and renders a dropdown list selection.<br>
+                            A <strong>datalist</strong> element is populated with <strong>option</strong> elements and works with an <strong>input</strong> to search through choices.<br>
+                            When a <strong>form</strong> is submitted, the <strong>name</strong> of the fields that accept input and the <strong>value</strong> of those fields are sent as <strong>name=value</strong> pairs.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">Form Validation</h3>
+                    <div class="content">
+                        <p> 
+                            Client-side validations happen in the browser before information is sent to a server.<br>
+                            Adding the <strong>required</strong> attribute to an input related element will validate that the input field has information in it.<br>
+                            Assigning a value to the <strong>min</strong> attribute of a number input element will validate an acceptable minimum value.<br>
+                            Assigning a value to the <strong>max</strong> attribute of a number input element will validate an acceptable maximum value.<br>
+                            Assigning a value to the <strong>minlength</strong> attribute of a text input element will validate an acceptable minimum number of characters.<br>
+                            Assigning a value to the <strong>maxlength</strong> attribute of a text input element will validate an acceptable maximum number of characters.<br>
+                            Assigning a regex to <strong>pattern</strong> matches the input to the provided regex.<br>
+                            If validations on a <strong>form</strong> do not pass, the user gets a message explaining why and the <strong>form</strong> cannot be submitted.
+                        </p>
                     </div>
                 </article>
             </section>
