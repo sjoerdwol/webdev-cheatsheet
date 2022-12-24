@@ -660,6 +660,48 @@
                         </p>
                     </div>
                 </article>
+                <article>
+                    <h3 class="article_title">Async JS: Promises</h3>
+                    <div class="content">
+                        <p>
+                            <strong>Promises</strong> are JavaScript objects that represent the eventual result of an asynchronous operation.<br>
+                            <strong>Promises</strong> can be in one of three states: <em>pending</em>, <em>resolved</em>, or <em>rejected</em>.<br>
+                            We construct a promise by using the <strong>new</strong> keyword and passing an executor function to the <strong>Promises</strong> constructor method.<br>
+                            <strong>setTimeout()</strong> is a Node function which delays the execution of a callback function using the event-loop.<br>
+                            We use <strong>.then()</strong> with a success handler callback containing the logic for what should happen if a promise resolves.<br>
+                            We use <strong>.catch()</strong> with a failure handler callback containing the logic for what should happen if a promise rejects.<br>
+                            <strong>Promise</strong> composition enables us to write complex, asynchronous code that’s still readable. We do this by chaining multiple <strong>.then()'s</strong> and <strong>.catch's</strong>.<br>
+                            To use <strong>Promise</strong> composition correctly, we have to remember to return <strong>Promises</strong> constructed within a <strong>.then()</strong>.<br>
+                            We should chain multiple <strong>Promises</strong> rather than nesting them.<br>
+                            To take advantage of concurrency, we can use <strong>Promise.all()</strong>.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">Async JS: Async-Await</h3>
+                    <div class="content">
+                        <p>
+                            <strong>async...await</strong> is syntactic sugar built on native JavaScript promises and generators.<br>
+                            We declare an async function with the keyword <strong>async</strong>.<br>
+                            Inside an <strong>async</strong> function we use the <strong>await</strong> operator to pause execution of our function until an asynchronous action completes and the awaited promise is no longer pending.<br>
+                            <strong>await</strong> returns the resolved value of the awaited promise.<br>
+                            We can write multiple <strong>await</strong> statements to produce code that reads like synchronous code.<br>
+                            We use <strong>try...catch</strong> statements within our async functions for error handling.<br>
+                            We should still take advantage of concurrency by writing <strong>async</strong> functions that allow asynchronous actions to happen in concurrently whenever possible.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">HTTP Requests</h3>
+                    <div class="content">
+                        <p>
+                            GET and POST requests can be created in a variety of ways.<br>
+                            We can use <strong>fetch()</strong> and <strong>async/await</strong> to asynchronous request data from APIs.<br>
+                            We can chain <strong>.then()</strong> methods to handle promises returned by the <strong>fetch()</strong> function.<br>
+                            For a POST request, the <strong>fetch()</strong> must include <strong>method: 'POST'</strong> and a body.
+                        </p>
+                    </div>
+                </article>
             </section>
             <section class="hidden">
                 <h2 class="topic_title">React</h2>
