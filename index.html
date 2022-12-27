@@ -706,8 +706,50 @@
             <section class="hidden">
                 <h2 class="topic_title">React</h2>
                 <article>
-                    <h3 class="article_title">to be completed...</h3>
-                    <div class="content"></div>
+                    <h3 class="article_title">JSX Introduction</h3>
+                    <div class="content">
+                        <p>
+                            <strong>JSX</strong> is a syntax extension for JavaScript. It looks a lot like HTML<br/>
+                            <strong>JSX</strong> is not valid JavaScript. Web browsers can't read it.<br/>
+                            If a JavaScript file contains <strong>JSX</strong> code, then that file has to be compiled before reaching the browser.<br/>
+                            A basic unit of <strong>JSX</strong> could look like this: <strong>const helloWorld = &lt;h1&gt;Hello world&lt;/h1&gt;</strong>.<br/>
+                            <br/>
+                            <strong>JSX</strong> can be saved in a variable, stored in an object or array or be passed to a function.<br/>
+                            <strong>JSX</strong> elements also can have attributes, just like regular HTML elements.<br/>
+                            <strong>JSX</strong> elements can be nested inside of other <strong>JSX</strong> elements. To improve readability, HTML-style line breaks and indentation can be used.<br/>
+                            In this case, the multi-line <strong>JSX</strong> expression has to be wrapped in <strong>parentheses ()</strong>.<br/>
+                            <br/>
+                            <strong>JSX</strong> must have exactly one outermost element. The first opening tag and the final closing tag must belong to the same element.<br/>
+                            <br/>
+                            <strong>JSX</strong> elements are rendered by the <strong>ReactDOM.render()</strong> function.<br/>
+                            The <strong>JSX</strong> element, which has to be rendered, gets passed as the first argument, while the location gets passed as the second argument.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">More advanced JSX</h3>
+                    <div class="content">
+                        <p>
+                            Grammar in <strong>JSX</strong> is mostly the same as in HTML.<br/>
+                            One difference is the class-attribute. Since class is a reserved word in JavaScript, you have to use the className-attribute in <strong>JSX</strong> instead.<br/>
+                            <br/>
+                            Another difference are self-closing tags.<br/>
+                            While the forward-slash before the closing angle-bracket is optional in JavaScript, it is mandatory in <strong>JSX</strong>.<br/>
+                            So &lt;br&gt; in JavaScript would have to be &lt;br/&gt; in <strong>JSX</strong>. Same goes for e. g. images.<br/>
+                            <br/>
+                            We can include plain JavaScript in <strong>JSX</strong> expressions. For this we use <strong>curly braces {}</strong>.<br/>
+                            So e. g. <strong>{2+3}</strong> inside an <strong>JSX</strong> expression would print 5, since the 2+3 would be executed.<br/>
+                            We can include JavaScript variables in our <strong>JSX</strong> expressions in the same way. This is also how event listeners can be assigned to <strong>JSX</strong> elements.<br/>
+                            <br/>
+                            If-Statements inside <strong>JSX</strong> expressions themselves don't work. Instead, there are multiple options on how to include conditionals.<br/>
+                            The first option is to write an if statement outside of the <strong>JSX</strong> expression and include the result in the <strong>JSX</strong> expression.<br/>
+                            Secondly, you can use the ternary operator inside the <strong>JSX</strong> expression <strong>( x ? y : z)</strong>.<br/> 
+                            Lastly, you can use the <strong>&&</strong> operator. If the statement on the left results in true, the <strong>JSX</strong> expression on the right gets rendered.<br/>
+                            <br/>
+                            The <strong>.map()</strong> function is one, that gets used often in React. It can be used to e. g. transform an array of elements to <strong>JSX</strong> expressions.<br/>
+                            It also allows you to easily assign the <strong>key</strong>-attribute to list items. The key is not always necessary in <strong>JSX</strong>, but it never hurts to use them!
+                        </p>
+                    </div>
                 </article>
             </section>
         </main>
