@@ -769,6 +769,30 @@
                         </p>
                     </div>
                 </article>
+                <article>
+                    <h3 class="article_title">Component Interaction</h3>
+                    <div class="content">
+                        <p>
+                            <strong>Components</strong> are able render other <strong>components</strong>.<br/>
+                            For this, the main <strong>component</strong> has to import the other <strong>component</strong>, which thus has to be exported.<br/>
+                            After the succesful export-import, the imported <strong>component</strong> can be rendered by being instanceiated in the <strong>render()</strong> function of the main <strong>component</strong>.<br/>
+                            <br/>
+                            <strong>Props</strong> are the way for <strong>component</strong> to communicate with each other.<br/>
+                            <strong>Props</strong> can be passed by assigning attributes to the instances of other <strong>component</strong>. The attribute has to follow the syntax: <em>prop-name=value</em>.<br/>
+                            The receiving <strong>component</strong> can access the passed prop with <em>this.props.prop-name</em>.<br/>
+                            The received <strong>prop</strong> can then be used for multiple purposes. It can be displayed, used for decisions or used to pass event handlers.<br/>
+                            A specific <strong>prop</strong> is <strong>this.props.children</strong>. It contains all children elements between the opening and closing tag of instanceiated <strong>component</strong>.<br/>
+                            In each file, outside of the <strong>component class</strong>, you can declare default <strong>props</strong>. These default <strong>props</strong> will be used, if a <strong>component</strong> expects a <strong>prop</strong>, but doesn't receive one.<br/>
+                            <br/>
+                            <strong>State</strong> is a <strong>component's</strong> own way of handling dynamic information. Other than <strong>props</strong>, the <strong>state</strong> can not be influenced from the outside.<br/>
+                            The initial <strong>state</strong> is set in the constructor of the <strong>component</strong>. <em>this.state</em> expects an object, which can include multiple <strong>key:value</strong> pairs.<br/>
+                            The <strong>state</strong> can be accessed by calling <strong>this.state.key</strong>.<br/>
+                            Later, the <strong>state</strong> can be updated by using <strong>this.setState()</strong>. This merges the object in the <strong>setState</strong> with the existing <strong>state</strong> from the constructor.<br/>
+                            <strong>this.setState</strong> most commonly gets wrapped in a custom function. For this to work, the custom function has to be binded to <strong>this</strong> in the constructor.<br/>
+                            <strong>this.setState</strong> automatically calls the <strong>render()</strong> function after changing the <strong>state</strong>.
+                        </p>
+                    </div>
+                </article>
             </section>
         </main>
         <script src="./resources/scripts/index.js"></script>
