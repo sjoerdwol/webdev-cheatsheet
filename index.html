@@ -811,6 +811,24 @@
                         </p>
                     </div>
                 </article>
+                <article>
+                    <h3 class="article_title">Lifecycle Methods</h3>
+                    <div class="content">
+                        <p>
+                            Each <strong>component</strong> has it's own <strong>lifecycle</strong>. This <strong>lifecycle</strong> exists of the three phases: <strong>Mounting</strong>, <strong>Updating</strong> and <strong>Unmounting</strong>.<br/>
+                            In each of these phases, several <strong>lifecycle methods</strong> get executed.<br/>
+                            <br/>
+                            In the <strong>Mounting</strong> phase, the important methods are: <strong>constructor()</strong>, <strong>render()</strong> and <strong>componentDidMount()</strong>.<br/>
+                            The newly introduced method, <strong>componentDidMount()</strong>, can be used to initiate <em>side-effects</em> after <strong>constructor()</strong> and <strong>render()</strong> are done with the initial setup.<br/>
+                            <br/>
+                            In the <strong>Updating</strong> phase, <strong>render()</strong> and <strong>componentDidUpdate()</strong> get executed.<br/>
+                            Just like <strong>componentDidMount()</strong> is good for <strong>mount-phase</strong> setup, <strong>componentDidUpdate()</strong> is good for some extra work in the <strong>update-phase</strong>.<br/>
+                            <br/>
+                            Lastly, the <strong>Unmounting</strong> phase is for "destroying" a <strong>component</strong>.<br>
+                            Everything in the <strong>componentWillUnmount()</strong> method will be executed right before the <strong>component</strong> is completly destroyed. It is good for clean-up work.
+                        </p>
+                    </div>
+                </article>
             </section>
         </main>
         <script src="./resources/scripts/index.js"></script>
