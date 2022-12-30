@@ -793,6 +793,24 @@
                         </p>
                     </div>
                 </article>
+                <article>
+                    <h3 class="article_title">Stateless Components / Stateful Components</h3>
+                    <div class="content">
+                        <p>
+                            <strong>Components</strong> that have a <strong>state</strong> are called <strong>stateful</strong>, while <strong>components</strong> without one are <strong>stateless</strong>.<br/>
+                            One of the many <strong>React Programming Patterns</strong> includes one <strong>stateful Parent Component</strong> and two <strong>stateless Child Components</strong>.<br/>
+                            <br/>
+                            The first <strong>stateless Child Component</strong> is tasked with displaying the current <strong>state</strong> of the <strong>stateful Parent Component</strong>.<br/>
+                            For this, the <strong>state</strong> gets passed down to the <strong>Child Component</strong> as a <strong>prop</strong>. Said <strong>Child</strong> then uses the <strong>prop</strong> to display the <strong>Parent's state</strong>.<br/>
+                            <br/>
+                            The second <strong>Child Component</strong> is tasked with updating / changing the <strong>state</strong> and thus the displayed information of it's <strong>Sibling Component</strong>.<br/>
+                            For this, you firstly need to create an event handler in the <strong>Parent Component</strong>, which wraps the <strong>this.setState()</strong> function.<br/>
+                            Then the created event handler gets passed to the <strong>Child</strong> as a <strong>prop</strong>. Here, you create another function, which uses and executes the <strong>prop</strong>.<br/>
+                            Lastly, you use the created function in the <strong>Child Component</strong> as an event handler. <br/>
+                            Now, if you execute said action, the <strong>Parent's state</strong> gets updated and sends the new <strong>state</strong> to the second <strong>Child</strong> to be displayed.
+                        </p>
+                    </div>
+                </article>
             </section>
         </main>
         <script src="./resources/scripts/index.js"></script>
