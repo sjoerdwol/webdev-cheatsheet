@@ -856,6 +856,47 @@
                         </p>
                     </div>
                 </article>
+                <article>
+                    <h3 class="article_title">Styling</h3>
+                    <div class="content">
+                        <p>
+                            In React, <strong>components</strong> can be styled by using objects, either as inline-styles or by using objects, which are defined elsewhere.<br/>
+                            Styling in React has some differences, e. g. the way styles are named. In React, styles are <em>object key-value-pairs</em>.<br/>
+                            Also, there is no need to specifically name pixels(px) in React. If you don't name another unit, React automatically assumes px for numbers.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">Container and Presentational Components</h3>
+                    <div class="content">
+                        <p>
+                            This is another <strong>React Programming Pattern</strong>, where you divide one <strong>component</strong> into two, one for the visible representation and one for the complex logic.<br/>
+                            The <strong>container component</strong> takes care of <strong>state</strong>, event handlers and so on while not rendering any JSX, except for the <strong>view component</strong>.<br/>
+                            Meanwhile, the <strong>view component</strong> does not have any <strong>state</strong> or any functions. All it does is display the information it gets from the <strong>container component</strong>.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">PropTypes</h3>
+                    <div class="content">
+                        <p>
+                            <strong>PropTypes</strong> are the way to document and validate your <strong>props</strong>.<br/>
+                            For each <strong>prop</strong> a <strong>component</strong> receives, you can define what type to expect and if it's required or not.<br/>
+                            If the execution does not match the defined PropType, you will get an error message.<br/>
+                            Example: <em>MyComponent.propTypes = {prop: PropTypes.string.isRequired}</em>.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">React Forms</h3>
+                    <div class="content">
+                        <p>
+                            <strong>React Forms</strong> mostly don't use html form tags.<br/>
+                            Normally, it's just an input with an onChange, which executes at every character change and saves the current state of the input.<br/> 
+                            This way, the server and client are always in sync and you never need to submit a lot of content at once. <br/>
+                        </p>
+                    </div>
+                </article>
             </section>
         </main>
         <script src="./resources/scripts/index.js"></script>
