@@ -829,6 +829,33 @@
                         </p>
                     </div>
                 </article>
+                <article>
+                    <h3 class="article_title">Function Components and Hooks</h3>
+                    <div class="content">
+                        <p>
+                            <strong>Function components</strong> are a different way of defining React <strong>components</strong>.<br/> 
+                            They can do the same things as <strong>class components</strong>, but are simpler and more straightforward.<br/>
+                            <strong>Function components</strong> also can receive <strong>props</strong>. Other than <strong>class components</strong>, <strong>function components</strong> call them as argument and not as this.props.<br/>
+                            <br/>
+                            <strong>Function components</strong> can also be <strong>stateful</strong>. For this, <strong>function components</strong> use the <strong>state hook</strong>.<br/>
+                            The <strong>state hook</strong> gets initialized like this: <em>const [state, setState] = useState(initialState);</em>. Before, <strong>useState</strong> needs to be imported.<br/>
+                            While <em>state</em> references the current value of the <strong>state</strong>, <em>setState</em> references a function used to update the value of the <strong>state</strong>.<br/>
+                            <em>setState</em> mostly gets used in event handlers. Also, it gives us the option to reference the previous <strong>state</strong> value.<br/>
+                            This is executed by using a callback function like this: <em>setState(prevState => prevState + 1)</em>. This is especially important when the <strong>state</strong> is an array or object.<br/>
+                            Here, we need to use the <strong>spread syntax</strong> to copy the previous <strong>state</strong> since <em>setState</em> doesn't merge but completely replaces the <strong>state</strong>.<br/>
+                            This would look like this: <em>setArrayState(prevArray => [...prevArray, newElement])</em> or <em>setObjectState(prevObject => ({...prevObject, newElement}))</em>.<br/>
+                            <br/>
+                            Just like <strong>class components</strong>, <strong>function components</strong> also have a possibility to execute side-code. This is done by using the <strong>effect hook</strong>.<br/>
+                            Just like to <strong>useState()</strong>, <strong>useEffect()</strong> needs to be imported to be used.<br/>
+                            <strong>useEffect()</strong> gets a callback function as first argument. This code will, by default, be executed after each render, including the first and last. This is called the <strong>effect</strong>.<br/>
+                            You can return another function from the first callback function to cleanup the <strong>effect</strong>. This <strong>cleanup function</strong> is optional, but highly recommended.<br/>
+                            As second argument, the <strong>useEffect()</strong> gets an array.<br/> 
+                            If you don't pass an array, the <strong>effect</strong> will be executed after each render. An empty array results in the <strong>effect</strong> only being executed at the first render.<br/>
+                            Lastly, you can pass a <strong>state</strong> in this array. This means that the <strong>effect</strong> depends on the passed <strong>state(s)</strong> and gets re-executed, once one of the <strong>states</strong> changes.<br/>
+                            Example: <em>useEffect(() => { `Print: ${state}`}, [state])</em>.
+                        </p>
+                    </div>
+                </article>
             </section>
         </main>
         <script src="./resources/scripts/index.js"></script>
