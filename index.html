@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="resources/styles/index.css">
         <link href="https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-        <link rel="icon" href="./resources/images/icon.ico">
+        <link rel="icon" href="./resources/images/favicon.png">
     </head>
     <body>
         <!--Header and top level navigation-->
@@ -21,6 +21,7 @@
                     <li id="nav_css">CSS</li>
                     <li id="nav_js">JS</li>
                     <li id="nav_react">React</li>
+                    <li id="nav_redux">Redux</li>
                 </ul>
             </nav>
         </header>
@@ -910,6 +911,57 @@
                             On the rendered <strong>component</strong>, you can access the <strong>URL parameters</strong> by using <strong>useParameters()</strong>.<br/>
                             You can also act based on a search <strong>query parameter</strong> (e. g. <em>/search?name=queryname</em>). This can be accessed by using <strong>useLocation()</strong>.<br/>
                             Lastly, a user can be redirected by you, either declaratively using <strong>Redirect</strong> or imperatively using <strong>useHistory()</strong> and its <strong>goForward()</strong>, <strong>goBack()</strong> and <strong>push()</strong> methods.
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <section class="hidden">
+                <h2 class="topic_title">Redux</h2>
+                <article>
+                    <h3 class="article_title">Core Redux Concepts</h3>
+                    <div class="content">
+                        <p>
+                            <strong>Redux</strong> is a library for managing and updating application state based on the Flux architecture.<br />
+                            <strong>Redux</strong> keeps state in a single object, which makes code more predicatble, testable and maintainable.<br />
+                            In a <strong>Redux</strong> app, data flows in one way: State -> View -> Action -> State and so on.<br />
+                            <br />
+                            The only new thing <strong>Redux</strong> brings, is <strong>action</strong>. An <strong>action</strong> is an object describing an event in the app.<br />
+                            It must have a <strong>type</strong> property and it typically has a <strong>payload</strong> property aswell. <br />
+                            A <strong>reducer</strong> function is then tasked with determining the app's next state depending on the current state and the specific <strong>action</strong>. <br />
+                            It returns the current state if the <strong>action</strong> is unknown. A <strong>reducer</strong> must follow three rules: <br />
+                            1. They should only calculate the new state based on the existing state and action <br />
+                            2. They are not allowed to modify the existing state. Instead, they must copy the existing state and make changes to the copied values. <br />
+                            3. They must not do any asynchronous logic or other side effects. <br />
+                            <br />
+                            <strong>Redux</strong> handles the state in a specific container called <strong>store</strong>. <br />
+                            Typically, there is only one <strong>store</strong> in a <strong>Redux</strong> app.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">Core Redux API</h3>
+                    <div class="content">
+                        <p>
+                            The <strong>Redux</strong> library can by installed by running <em>npm install redux</em>. <br />
+                            Then, you can import <strong>createStore()</strong> from the <strong>Redux</strong> library. <br />
+                            You can use this function to create a <strong>store</strong>. It holds the current state and gives you several functions to manage it. <br />
+                            Use <strong>store.getState()</strong> to get the current state. Dispatch actions to the <strong>store</strong> using <strong>store.dispatch(actionObject)</strong>. <br />
+                            <br />
+                            To avoid mistakes while typing several dispatch calls, it's recommended to write <strong>action creators</strong> for each <strong>action</strong>. <br />
+                            <br />
+                            To e. g. update the UI after every state-change, you need to use a listener and bind it to the <strong>store</strong> using <strong>store.subscribe(listener)</strong>. <br />
+                            This pattern can be used with every sort of UI library.
+                        </p>
+                    </div>
+                </article>
+                <article>
+                    <h3 class="article_title">Strategies for Complex State</h3>
+                    <div class="content">
+                        <p>
+                            To make complex states manageable, it is recommended to use the <strong>Reducer Composition design pattern</strong> for <strong>Redux</strong>. <br />
+                            In the <strong>design pattern</strong>, you split the state, the <strong>action creators</strong> and multiple <strong>reducers</strong> into <strong>state slices</strong> in multiple files. <br />
+                            Then, you combine the <strong>slice reducers</strong> into a <strong>root reducer</strong> using <strong>combineReducers()</strong> and create the <strong>store</strong> using the <strong>root reducer</strong>. <br />
+                            The <strong>root reducer</strong> automatically delegates the <strong>actions</strong> into the <strong>slice reducers.</strong>
                         </p>
                     </div>
                 </article>
