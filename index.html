@@ -999,6 +999,20 @@
                         </p>
                     </div>
                 </article>
+                <article>
+                    <h3 class="article_title">Async Actions with Middleware and Thunks</h3>
+                    <div class="content">
+                        <p>
+                            <strong>Middleware</strong> in <strong>Redux</strong> is code, that gets executed between the <strong>dispatch</strong> of an <strong>action</strong> and the <strong>action</strong> arriving at the <strong>store</strong>. <br />
+                            <br />
+                            <strong>Thunks</strong> are higher-order functions, that wrap another function that we want to execute later on. <br />
+                            In <strong>Redux</strong>, <strong>Thunks</strong> enable asynchronous functionality. For this, we <strong>redux-thunk</strong>. <br />
+                            <strong>redux-thunk</strong> is already included in <strong>RTK</strong> and does not need to be imported or configured seperately. <br />
+                            <strong>RTK</strong> also provides <strong>createAsyncThunk()</strong>, which simplifies defining asynchronous functions incl. the three <strong>promise lifecycle actions</strong>. <br />
+                            These <strong>promise lifecycle actions</strong> (pending, fulfilled, rejected) then only need to be supplied to <strong>createSlice()</strong> as <em>extraReducers</em>.
+                        </p>
+                    </div>
+                </article>
             </section>
         </main>
         <script src="./resources/scripts/index.js"></script>
