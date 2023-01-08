@@ -980,6 +980,25 @@
                         </p>
                     </div>
                 </article>
+                <article>
+                    <h3 class="article_title">Redux Toolkit (RTK)</h3>
+                    <div class="content">
+                        <p>
+                            <strong>RTK</strong> contains packages and functions that build in best-practices to simplify most <strong>Redux</strong> tasks and prevent common mistakes. <br />
+                            <strong>RTK</strong> has a <strong>createSlice()</strong> function that simplifies our <strong>reducer</strong> reducer logic and <strong>actions</strong>. <br />
+                            <strong>createSlice()</strong> has the one parameter <em>options</em>, with 3 properties: <em>name</em>, <em>initialState</em> and <em>reducers</em>. <br />
+                            <br />
+                            <em>name</em> is a string that is used as prefix for generated <strong>action types</strong>. <br /> 
+                            <em>reducer</em> is an object of methods, where the key determines the <strong>action type</strong> and the methods are <strong>reducers</strong>, that will be executed when that <strong>action</strong> is dispatched. <br />
+                            In these so called <strong>case reducers</strong>, you can write mutable code since it uses <em>Immer</em> to make sure to return an immutably updated state. <br />
+                            <strong>createSlice()</strong> returns an object with the following properties: <em>name</em>, <em>reducer</em>, <em>actions</em> and <em>caseReducers</em>. <br />
+                            When exporting, we use a Redux community code convention and named-export the <strong>action creators</strong> and default-export the <strong>reducer</strong>.<br />
+                            <br />
+                            Additionally, <strong>RTK</strong> provides us with <strong>configureStore()</strong>., which simplifies the setup process.<br />
+                            <strong>configureStore()</strong> combines <strong>createStore()</strong> and <strong>combineReducers()</strong> and handles most of the <strong>store</strong> setup automatically.
+                        </p>
+                    </div>
+                </article>
             </section>
         </main>
         <script src="./resources/scripts/index.js"></script>
